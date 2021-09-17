@@ -37,13 +37,13 @@ nav{
     color: #fff;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 182px;
+    padding-left: 150px;
     float: left;
 }
 
 .menu{
     float: left;
-    padding-left: 324px;
+    padding-left: 800px;
 }
 
 .menu li{
@@ -63,13 +63,13 @@ nav{
 
 .title__container{
     float: left;
-    margin: 340px 0px 0px 150px;
+    margin: 300px 0px 0px 150px;
     color: #2c384a;
     text-align: center;
 }
 
 .title__container h1{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -164,7 +164,7 @@ table.about_me{
 .what_i_can_box{
     display: flex;
     justify-content: space-between;
-    margin: 100px auto 90px auto;
+    margin: 200px auto 90px auto;
     max-width: 1000px;
     text-align: center;
 }
@@ -186,10 +186,243 @@ table.about_me{
      text-align: center;
  }
 
+ .cases{
+     text-align: center;
+     color: #384354;
+ }
+
  .case_ p{
      text-align: center;
  }
 
   .case_img{
+      width: 1160px;
+      height: 590px;
       padding-top: 44px;
+      margin-bottom: 40px;
   }
+
+  .case_container{
+      width: 1160px;
+      height: 168px;
+      margin: 0 auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: justify;
+  }
+
+  .case_name{
+      margin-left: 80px;
+      font-size: 18px;
+  }
+
+  .case_container h4 {
+      font-size: 18px;
+      font-weight: bold;  
+      margin-bottom: 12px;
+      margin-top: 12px;
+}
+
+.case_container input{
+        height: 44px;
+        width: 180px;
+        text-align: center;
+        border-radius: 5px;
+        background: #63b5ae;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 25px;
+        padding-right: 16px;
+        padding-left: 15px;
+    }
+
+.cost{
+    text-align: center;
+    width: 880px;
+    margin: 0 auto 0 auto;
+}
+
+.cost_menu{
+    text-align: justify;
+}
+
+.cost h3{
+      font-size: 18px;
+      font-weight: bold;  
+      margin-bottom: 12px;
+      margin-top: 12px;
+      text-transform: uppercase;
+}
+
+.cost select{
+    background: #eee url(../img/18.png) right/auto 70% no-repeat ;
+    width: 890px;
+    height: 55px;
+    padding: 20px;
+    appearance: none;
+}
+.cost hr{
+    height: 1px;
+    width: 890px;
+    border: 1px solid #eee;
+    margin-top: 38px;
+    margin-bottom: 21px;
+}
+
+.cost p{
+    font-size: 16px;
+    font-weight: bold;  
+    margin-bottom: 15px;
+}
+
+.statistic{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: url(../img/9.jpg) center/cover repeat;
+}
+
+.statistic h2{
+    padding-top: 100px;
+}
+
+
+.statistic_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 200px auto 0 auto;
+    max-width: 1025px;
+}
+
+.statistic_container p{ 
+  font-size: 16px;
+  color: rgb(50, 62, 79);
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+.statistic_container h4{
+  font-size: 30.5px;
+  font-family: "Impact";
+  color: rgb(50, 62, 79);
+  line-height: 0.556;
+  text-align: center;
+  -moz-transform: scale(1.02, 0.89);
+  -webkit-transform: scale(1.02, 0.89);
+  -ms-transform: scale(1.02, 0.89);
+  margin-top: 40px;
+  text-align: center;
+
+}
+.review_container{
+    text-align: center;
+    color: rgb(50, 62, 79);
+    width: 690px;
+    margin: 0px auto 20px auto;
+    font-size: 15px;
+}
+
+.review_container p{
+    margin-top: 35px;
+}
+
+.rewiew_photo{
+    margin: 0px auto 20px auto;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 100%;
+    background: url(../img/13.png)  50% 5%/auto 110% no-repeat, #ecf0f2;
+}
+
+.review_radio{
+    margin-top: 30px;
+}
+
+.contacts{
+    width: 100%;
+    height: calc(100% - 60px);
+    background:url(../img/14.jpg) center/cover repeat;
+    color: #fff;
+    text-align: center;
+}
+.contacts h2{
+    padding-top: 80px;
+    color: #fff; 
+}
+
+.contacts h3{
+    margin-bottom: 44px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contacts p{
+    margin-bottom: 50px;
+}
+
+.contacts_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto 50px auto;
+    max-width: 610px;
+    text-align: center;
+}
+
+.contact_block{
+    height: 80px;
+}
+
+.contact_block img{
+    margin-bottom: 15px;
+}
+
+.mail_name{
+    text-align: center;
+    width: 735px;
+    margin: 0 auto 0 auto;
+}
+
+.mail_block{
+    margin-bottom: 14px;
+    width: 735px;
+}
+
+.field{
+    width: 365px;
+    height: 30px;
+    padding: 14px;
+}
+
+.mail_text{
+    width: 100%;
+    height: 95px;
+    padding: 14px;
+}
+
+.mail_submit{
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 26px;
+    border-width: 2px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 5px;
+    width: 120px;
+    height: 41px;
+}
+
+.footer{
+    height: 95px;
+    background-color: #354051;
+    text-align: center;
+}
+
+.footer_p{
+    font-size: 13px;
+    color: #fff;
+    padding-top: 45px;
+}

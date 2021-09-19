@@ -1,0 +1,68 @@
+a{
+    color: blue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover{
+    background-color: green;
+    color: black;
+ 
+}
+
+a:active{
+   color: black;
+}
+
+a:visited{
+    background-color: #fff;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid slategrey;    
+    margin: 0 auto;
+}
+
+.box:hover{
+    background-color: #123456;
+}
+
+input:focus{
+    border: 3px solid greenyellow;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+ul{
+    margin: 50px;
+    font-size: 19px;
+    width: 30px;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+li::before{
+    content: "";     
+    display: block;
+    width: 100%;                           
+}    
+
+
+li::after{
+    content: "";
+}
+
+li:hover::before{
+    
+    height: 3px;
+    transform:scaleX(1);
+    background-color: red;
+    transition: all 0.3s;
+}
+
+p::first-line{
+    color: royalblue;
+}

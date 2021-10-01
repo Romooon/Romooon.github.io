@@ -1,0 +1,152 @@
+a{
+    color: blue;
+    text-decoration: none;
+    padding: 20px;
+}
+
+a:hover{
+    background-color: green;
+    color: black;
+ 
+}
+
+a:active{
+   color: black;
+}
+
+a:visited{
+    background-color: #fff;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid slategrey;    
+    margin: 0 auto;
+}
+
+.box:hover{
+    background-color: #123456;
+}
+
+input:focus{
+    border: 3px solid greenyellow;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+ul{
+    margin: 50px;
+    font-size: 19px;
+    width: 30px;
+}
+
+li{
+    margin-bottom: 30px;
+}
+
+li::before{
+    content: "";     
+    display: block;
+    width: 100%;                           
+}    
+
+
+li::after{
+    content: "";
+}
+
+li::after{
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: red;
+    transition: all 0.3s;
+}
+
+li:hover::after{
+    transform:scaleX(1);
+}
+
+p::first-line{
+    color: royalblue;
+}
+
+body{
+    padding: 50px;
+}
+
+/* .boxy{
+    width: 200px;
+    height: 200px;
+    border: 2px solid burlywood;    
+    transition: all 2s ease;
+} */
+
+/* .boxy span{
+    text-align: center;
+    display: block; 
+    margin-top: 90px;
+}
+
+.boxy:hover{
+    margin: +100px;
+} */
+
+.boxy span{
+    text-align: center;
+    display: block; 
+    margin-top: 90px;
+}
+
+.boxy{
+    width: 200px;
+    height: 200px;
+    border: 2px solid burlywood; 
+    background-color: azure; 
+    animation: move 3s infinite alternate-reverse; ; 
+    /* animation-iteration-count: ;
+    animation-direction: ; */
+    animation-fill-mode: backwards;
+}
+
+@keyframes move{
+    0%{
+        background: rebeccapurple;
+        margin-left: 0;
+    }
+
+    100%{
+        background: white;
+        margin-left: 200px;
+    }
+}
+
+.boxy:active{
+    animation-play-state: paused;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}

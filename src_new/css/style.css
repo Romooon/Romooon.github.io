@@ -165,7 +165,7 @@ h2{
     text-align: center;
     margin-top: 80px;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
     color: #263244;
     text-transform: uppercase;
@@ -180,9 +180,9 @@ hr{
 }
 
 table.about_me{
-    margin: 0px auto 20px auto;
-    width: 300px;
-    height: 300px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
     border: none;
     border-radius: 100%;
     background: url(../img/boy.png)  100% 100%/auto 100% no-repeat, #ecf0f2;
@@ -190,12 +190,11 @@ table.about_me{
 
 .about_me_container{
     align-items: center;
-    width: 900px;
     margin: 0 auto;
 }
 
  .about_me_container p{
-     font-size: 22px;
+     font-size: 13px;
      color: #3f495a;
      text-align: justify;
      margin-top: 24px;
@@ -210,7 +209,7 @@ table.about_me{
     color: #6d7682;
     font-size: 16px;
     margin: 30px 14px;
-    padding-right: 16px;
+    padding-right: 15px;
     padding-left: 25px;
     transition: all 0.2s;
     transform: scale(1);
@@ -240,16 +239,14 @@ table.about_me{
     display: flex;
     justify-content: space-between;
     margin: 200px auto 90px auto;
-    max-width: 1200px;
     text-align: center;
 }
 
  .box{
-    width: 400px;
     color: #3f495a;
-    margin: 0 60px;
     font-size: 14px;
     transition: all 0.4s ease;
+    box-sizing: border-box;
     -moz-transform: scale(1);
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -276,21 +273,20 @@ table.about_me{
      color: #384354;
  }
 
+
+
  .case_ p{
      text-align: center;
+     font-size: 13px;
  }
 
   .case_img{
-      width: 1160px;
-      height: 590px;
+      width: 100%;
       padding-top: 44px;
-      margin-bottom: 40px;
   }
 
   .case_container{
-      width: 1160px;
       height: 168px;
-      margin: 0 auto 0 auto;
       display: flex;
       justify-content: space-between;
       text-align: justify;
@@ -308,9 +304,14 @@ table.about_me{
       margin-top: 12px;
 }
 
+.case_links a{
+    font-size: 13px;
+
+}
+
 .case_container input{
+        width: 200px;
         height: 44px;
-        width: 180px;
         text-align: center;
         border-radius: 5px;
         background: #63b5ae;
@@ -335,8 +336,7 @@ table.about_me{
 
 .cost{
     text-align: center;
-    width: 880px;
-    margin: 0 auto 0 auto;
+    margin: 50px auto 0 auto;
 }
 
 .cost_menu{
@@ -353,7 +353,6 @@ table.about_me{
 
 .cost select{
     background: #eee url(../img/18.png) right/auto 70% no-repeat ;
-    width: 890px;
     height: 55px;
     padding: 20px;
     appearance: none;
@@ -370,6 +369,27 @@ table.about_me{
     font-size: 16px;
     font-weight: bold;  
     margin-bottom: 15px;
+}
+
+.cost input{
+        width: 200px;
+        height: 44px;
+        text-align: center;
+        border-radius: 5px;
+        background: #63b5ae;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        margin-top: 25px;
+        padding-right: 16px;
+        padding-left: 15px;
+        transition: ease all 0.2s;
+        transform: scale(1);
+}
+
+.cost input:hover{
+    background: #db8755;
+    color: white;
 }
 
 .statistic{
@@ -429,7 +449,6 @@ table.about_me{
 .review_container{
     text-align: center;
     color: rgb(50, 62, 79);
-    width: 690px;
     margin: 0px auto 20px auto;
     font-size: 15px;
 }
@@ -440,8 +459,8 @@ table.about_me{
 
 .rewiew_photo{
     margin: 0px auto 20px auto;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border: none;
     border-radius: 100%;
     background: url(../img/13.png)  50% 5%/auto 110% no-repeat, #ecf0f2;
@@ -470,15 +489,10 @@ table.about_me{
     font-weight: bold;
 }
 
-.contacts p{
-    margin-bottom: 50px;
-}
-
 .contacts_container{
     display: flex;
     justify-content: space-between;
     margin: 50px auto 50px auto;
-    max-width: 610px;
     text-align: center;
 }
 
@@ -492,19 +506,13 @@ table.about_me{
 
 .mail_name{
     text-align: center;
-    width: 735px;
     margin: 0 auto 0 auto;
 }
 
-.mail_block{
-    margin-bottom: 14px;
-    width: 735px;
-}
-
 .field{
-    width: 365px;
     height: 30px;
     padding: 14px;
+    margin-bottom: 10px;
 }
 
 .mail_text{
@@ -638,4 +646,41 @@ table.about_me{
         background: rgba(0, 0, 0, 0.4)
     }
 
+    .what_i_can_box{
+        display: block;
+        justify-content: space-between;
+        margin: 0 auto 50px auto;
+    }
+
+    .box{
+        margin-top: 20px;
+        margin-bottom: 20px;        
+    }
+
+    .statistic_container{
+        display: block;
+        justify-content: space-between;
+        margin: 0 auto 50px auto;      
+    }
+
+    .stat_block{
+        margin-top: 20px;
+        margin-bottom: 20px;        
+    }
+}
+
+@media (max-width: 768px){
+    .case_container{
+        display: block;
+    }
+    
+    .case_name{
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .case_name h4{
+        text-align: center;
+    }
 }

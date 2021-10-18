@@ -221,7 +221,7 @@
         <div class="cost_menu">
           <div class="cost_block1">
             <h3 class="col-4">Тип сайта</h3>
-            <select class="col-12" name="list1" id="list" placeholder="Выберите пункт...">
+            <select onchange="document.location=this.options[this.selectedIndex].value"  class="col-12" name="list1" id="list" placeholder="Выберите пункт...">
               <option value="">Выберите пункт...</option>
               <option value="">Пункт2</option>
               <option value="">Пункт3</option>
@@ -230,7 +230,7 @@
           </div>
           <div class="cost_block1">
             <h3 class="col-4">Дизайн</h3>
-            <select class="col-12" name="list2" id="list">
+            <select onchange="document.location=this.options[this.selectedIndex].value"   class="col-12" name="list2" id="list">
               <option value="">Выберите пункт...</option>
               <option value="">Пункт2</option>
               <option value="">Пункт3</option>
@@ -239,12 +239,13 @@
           </div>
           <div class="cost_block1">
             <h3 class="col-4">Адаптивность</h3>
-            <select class="col-12" name="list3" id="list">
+            <select onchange="document.location=this.options[this.selectedIndex].value"   class="col-12" name="list3" id="list">
               <option value="">Выберите пункт...</option>
               <option value="">Пункт2</option>
               <option value="">Пункт3</option>
               <option value="">Пункт4</option>
             </select>
+            
           </div>
           <hr>
           <p class="col-3">Cроки </p><br>

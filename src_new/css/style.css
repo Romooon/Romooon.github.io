@@ -461,11 +461,19 @@ table.about_me{
     height: 150px;
     border: none;
     border-radius: 100%;
-    background: url(../img/13.png)  50% 5%/auto 110% no-repeat, #ecf0f2;
 }
 
-.review_radio{
-    margin-top: 30px;
+.rewiew_photo_1{
+    background: url(../img/13.png)  50% 5%/auto 110% no-repeat, #ecf0f2;
+    
+}
+.rewiew_photo_2{
+    background: url(../img/review2.jpg)  50% 5%/auto 200% no-repeat, #ecf0f2;
+    
+}
+.rewiew_photo_3{
+    background: url(../img/review3.png)  50% 5%/auto 200% no-repeat, #ecf0f2;
+    
 }
 
 .contacts{
@@ -686,4 +694,78 @@ table.about_me{
     .cases input{
         width: 200px;
     }
+}
+
+.element-animation{
+    opacity: 0;
+}
+
+.element-animation.show-animation{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8) ;
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 50px;
+}
+
+.close-popup{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    right: 30px;
+    transition: all 0.2s;
+    transform: scale(1);  
+}
+
+.close-popup:hover{    
+    transform: scale(1.1);  
+}
+
+.close-popup:active{    
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.popup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup form input{
+    width: 60%;
+    border: 2px solid #000;
+    font-size: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+    padding: 5px;
+}
+
+.popup form input[type="submit"]{
+    background-color: #384354;
+    color: #fff;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

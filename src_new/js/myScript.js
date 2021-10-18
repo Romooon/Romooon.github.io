@@ -43,8 +43,12 @@ function onEntry (entry) {
 // });
 
 
-const time = 3000;
+//Статистика
+
+const time = 2000;
 const step = 2;
+
+let n;
 
 function outNum(num, elem){
     let l = document.querySelector('#' + elem);
@@ -61,6 +65,15 @@ function outNum(num, elem){
 }
 
 outNum(120, 'out-1');
-// outNum(4600, 'out-2');
-// outNum(340, 'out-3');
-// outNum(23, 'out-4');
+outNum(4600, 'out-2');
+outNum(340, 'out-3');
+outNum(23, 'out-4');
+
+// Калькулятор
+
+let sum = 0;
+
+$("select").on("change", function(){
+    sum = sum + $(this).val();
+
+});

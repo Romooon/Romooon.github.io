@@ -1,23 +1,23 @@
 $(document).ready(function () {
 
-    let options = {thereshold: [0.5]};
+    let options = { thereshold: [0.5] };
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.element-animation');
     elements.each((i, el) => {
         observer.observe(el);
     });
 
-    $(document).ready(function() {
-  $('.image-link').magnificPopup({type:'image'});
-});
+    $(document).ready(function () {
+        $('.image-link').magnificPopup({ type: 'image' });
+    });
 });
 
-function onEntry (entry) {
+function onEntry(entry) {
     entry.forEach(change => {
-        if (change.isIntersecting){
+        if (change.isIntersecting) {
             change.target.classList.add('show-animation');
             change.target.src = change.target.dataset.src;
-        } 
+        }
     });
 }
 
@@ -50,18 +50,18 @@ const step = 2;
 
 let n;
 
-function outNum(num, elem){
+function outNum(num, elem) {
     let l = document.querySelector('#' + elem);
     n = 0;
-    let t = Math.round(time/(num/step));
+    let t = Math.round(time / (num / step));
     let interval = setInterval(() => {
         n = n + step;
-        if(n == num){
+        if (n == num) {
             clearInterval(interval);
         }
         l.innerHTML = n;
-    }, 
-    t);
+    },
+        t);
 }
 
 outNum(120, 'out-1');
@@ -70,10 +70,23 @@ outNum(340, 'out-3');
 outNum(23, 'out-4');
 
 // Калькулятор
-
 let sum = 0;
 
-$("select").on("change", function(){
-    sum = sum + $(this).val();
+$("select").on("change", function () {
 
+    $('#js-button').click(function () {
+
+        var valueType = $('#type').val();
+        var valueDesign = $('#design').val();
+        var valueAdapt = $('#adapt').val();
+
+        let totalPrice = Number(valueType) + Number(valueDesign) + Number(valueAdapt)
+
+        $('#js-result').html('Стоимость: ' + totalPrice);
+
+    });
 });
+
+
+
+

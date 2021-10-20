@@ -221,38 +221,42 @@
         <div class="cost_menu">
           <div class="cost_block1">
             <h3 class="col-4">Тип сайта</h3>
-            <select onchange="document.location=this.options[this.selectedIndex].value"  class="col-12" name="list1" id="list" placeholder="Выберите пункт...">
-              <option value="">Выберите пункт...</option>
-              <option value="">Пункт2</option>
-              <option value="">Пункт3</option>
-              <option value="">Пункт4</option>
+            <select class="col-12 form-control"
+              id="type" name="type">
+              <option value="1000">Промо-сайт</option>
+              <option value="2000">Сайт-визитка</option>
+              <option value="3000">Корпоративный сайт</option>
+              <option value="4000">Интернет-магазин</option>            
             </select>
           </div>
+
+
           <div class="cost_block1">
             <h3 class="col-4">Дизайн</h3>
-            <select onchange="document.location=this.options[this.selectedIndex].value"   class="col-12" name="list2" id="list">
-              <option value="">Выберите пункт...</option>
-              <option value="">Пункт2</option>
-              <option value="">Пункт3</option>
-              <option value="">Пункт4</option>
+            <select class="col-12 form-control"
+              id="design" name="design">
+              <option value="1000">Стандартный шаблон</option>
+              <option value="2000">Добавление пользовательских настроек</option>
+              <option value="3000">Добавление особых пошеланий</option>
+              <option value="5000">Уникальный дизайн</option>
             </select>
           </div>
           <div class="cost_block1">
             <h3 class="col-4">Адаптивность</h3>
-            <select onchange="document.location=this.options[this.selectedIndex].value"   class="col-12" name="list3" id="list">
-              <option value="">Выберите пункт...</option>
-              <option value="">Пункт2</option>
-              <option value="">Пункт3</option>
-              <option value="">Пункт4</option>
+            <select class="col-12 form-control"
+              id="adapt" name="adapt">
+              <option value="1000">Только ПК</option>
+              <option value="2000">+Разрешение для планшетов</option>
+              <option value="3000">+Разрешение для</option>
+              <option value="4000">Пункт4</option>
             </select>
-            
+
           </div>
           <hr>
           <p class="col-3">Cроки </p><br>
-          <p class="col-3">Стоимость </p>
+          <p class="col-3" id="js-result">Стоимость </p>
         </div>
-        <input class="case col-2" type="submit" value="Оставить заявку">
-
+        <input class="case col-2" id="js-button" type="submit" value="Оставить заявку">
       </div>
     </div>
   </div>
@@ -310,24 +314,30 @@
               <div class="carousel-item active">
                 <div class="review_block">
                   <table class="rewiew_photo rewiew_photo_1 col-lg-3 offset-lg-5 col-md-4 offset-md-4"></table>
-                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto. Saepe
+                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto.
+                    Saepe
                     corrupti amet, voluptas assumenda.</p>
                   <p>Михаил, Ген директор ПАО "Газпром"</p>
-                </div>              </div>
+                </div>
+              </div>
               <div class="carousel-item">
                 <div class="review_block">
                   <table class="rewiew_photo rewiew_photo_2 col-lg-3 offset-lg-5 col-md-4 offset-md-4"></table>
-                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto. Saepe
+                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto.
+                    Saepe
                     corrupti amet, voluptas assumenda.</p>
                   <p>Михаил, Ген директор ПАО "Газпром"</p>
-                </div>              </div>
+                </div>
+              </div>
               <div class="carousel-item">
                 <div class="review_block">
                   <table class="rewiew_photo rewiew_photo_3 col-lg-3 offset-lg-5 col-md-4 offset-md-4"></table>
-                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto. Saepe
+                  <p class="col-10 offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, architecto.
+                    Saepe
                     corrupti amet, voluptas assumenda.</p>
                   <p>Михаил, Ген директор ПАО "Газпром"</p>
-                </div>              </div>
+                </div>
+              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
               data-bs-slide="prev">
@@ -419,10 +429,10 @@
       <form action="">
         <input type="text" class="popup-form" placeholder="Ваше имя">
         <input type="tel" class="popup-form" placeholder="Ваш телефон">
-        <input type="submit"  value="Отправить заявку">
+        <input type="submit" value="Отправить заявку">
       </form>
-    </div>    
-  </div> 
+    </div>
+  </div>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>

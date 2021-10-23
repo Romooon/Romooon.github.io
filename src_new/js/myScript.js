@@ -10,6 +10,32 @@ $(document).ready(function () {
     $(document).ready(function () {
         $('.image-link').magnificPopup({ type: 'image' });
     });
+
+    $("#inputTel").mask("+7(999) 999-9999");
+
+    $('form').submit(function(event){
+            if ($("#inputTel").val() == "" || $("#inputEmail").val() == ""){
+        event.preventDefault();
+        alert("Введите ваш телефон");
+    }
+
+    $('form').submit(function(event){
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url:"php/mail.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val=("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+
+        });
+        return false;
+    }
+    })
+
 });
 
 function onEntry(entry) {
@@ -86,6 +112,8 @@ $("select").on("change", function () {
 
     });
 });
+
+// Masked
 
 
 

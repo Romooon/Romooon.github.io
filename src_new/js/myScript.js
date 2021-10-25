@@ -18,22 +18,6 @@ $(document).ready(function () {
         event.preventDefault();
         alert("Введите ваш телефон");
     }
-
-    $('form').submit(function(event){
-        event.preventDefault();
-
-        $.ajax({
-            type: "POST",
-            url:"php/mail.php",
-            data: $(this).serialize()
-        }).done(function(){
-            $(this).find("input").val=("");
-            alert("Успешно отправлено!");
-            $("form").trigger("reset");
-
-        });
-        return false;
-    }
     })
 
 });

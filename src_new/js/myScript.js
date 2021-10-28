@@ -18,6 +18,22 @@ $(document).ready(function () {
         event.preventDefault();
         alert("Введите ваш телефон");
     }
+
+    $('form').submit(function(event){
+        event.preventDefault();
+
+        $.ajax({
+            type: "POST",
+            url:"php/mail.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val=("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+
+        });
+        return false;
+    })
     })
 
 });
@@ -66,12 +82,13 @@ function outNum(num, elem) {
     let t = Math.round(time / (num / step));
     let interval = setInterval(() => {
         n = n + step;
+        console.log(n);
         if (n == num) {
             clearInterval(interval);
         }
         l.innerHTML = n;
     },
-        t);
+    );
 }
 
 outNum(120, 'out-1');
@@ -96,6 +113,24 @@ $("select").on("change", function () {
 
     });
 });
+
+let days = 0;
+
+$("select").on("change", function () {
+
+    $('#js-button').click(function () {
+
+        var dayType = $('#type').attr("day");
+        var dayDesign = $('#design').attr("day");
+        var dayAdapt = $('#adapt').attr("day");
+
+        let totalDays = Number(dayType) + Number(dayDesign) + Number(dayAdapt);
+
+        $('#js-result-days').html('Сроки: ' + totalDays + ' дней');
+
+    });
+});
+
 
 // Masked
 
